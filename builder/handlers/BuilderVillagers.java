@@ -1,6 +1,8 @@
 package builder.handlers;
 
+import builder.EntitySanta;
 import net.minecraft.util.ResourceLocation;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.VillagerRegistry;
 
 public class BuilderVillagers 
@@ -118,6 +120,10 @@ public class BuilderVillagers
 		VillagerRegistry.instance().registerVillagerSkin(51, new ResourceLocation("builder", "textures/peeps/viking/villager.png"));
 		VillagerRegistry.instance().registerVillagerId(52);
 		VillagerRegistry.instance().registerVillagerSkin(52, new ResourceLocation("builder", "textures/peeps/viking/villager.png"));
+		
+		//Santa Villagers_______________________________________Sand Villagers
+		VillagerRegistry.instance().registerVillagerId(53);
+		VillagerRegistry.instance().registerVillagerSkin(53, new ResourceLocation("builder", "textures/peeps/christmas/santa.png"));
 		
 		VillagerRegistry.instance().getRegisteredVillagers();
 	}
